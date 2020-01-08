@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="morka">
+<link rel="icon" href="../../favicon.ico">
+<title>Web App</title>
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="font-awesome.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+</script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+</script>
+<![endif]-->
+</head>
+
+<body>
+ <nav class="navbar navbar-default navabr-fixed-top">
+     <div class="navbar-header">
+         <a class="navbar-brand">
+            <h4 class="name">
+               <span class="sp1">Omo</span>
+               <span class="sp2">vJ</span>
+               <span class="sp3">boY</span>
+            </h4>
+         </a>
+         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+     </div>
+     <div class="collapse navbar-collapse" id="nav-menu">
+         <ul class="nav navbar-nav">
+          <li class="active">
+              <a href="#">
+                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                  Home 
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="badge">5</span>
+                  <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                  About
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="glyphicon glyphicon-envelope"  aria-hidden="false"></span>
+                   Songs
+              </a>
+          </li>
+          <li class="visible-xs-inline">
+              <a href="#">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  Profile
+              </a>
+          </li>
+          <li class="visible-xs-inline">
+              <a href="#">
+                  <i><svg style="height: 30px; width: 20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path style="fill: #ffffff" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"/></svg></i>
+                  Contact
+              </a>
+          </li>
+         </ul>
+         <button id="tweet" class="btn btn-default pull-right hidden-sm">
+             <span class="glyphicon glyphicon-pencil" aria-hidden="true">
+                 Tweet
+         </button>
+     <div id="nav-options" class="btn-group pull-right">
+             <button type="button" class="btn btn-default dropdown-toggle thumbnail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <img src="img/vj.jpg">
+             </button>
+             <ul class="dropdown-menu">
+                 <li><a href="#">Profile</a></li>
+                 <li><a href="#">Setting</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="#">Contact</a></li>
+             </ul> 
+         </div>
+         <form id="search" role="search" class="hidden-xs">
+             <div class="input-group">
+                 <input type="text" class="form-control" placeholder="search...">
+                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+             </div>
+         </form>
+     </div>
+ </nav>
+ <div class="container">
+     <div class="row">
+         <div id="profile" class="col-md-3 hidden-sm hidden-xs"></div>
+         <div  id="main" class="col-sm-12 col-md-6"></div>
+         <div id="right-content" class="col-md-3 hidden-sm hidden-xs"></div>
+     </div>
+    </div>
+     <!-- cards-->
+     <div id="card">
+      <div class="card" id="profile-resume">
+        <img id="mainImg"class="card-img-top img-responsive" src="img/images (6).jpeg" height="50px" width="100%">
+        <div class="card-block">
+            <img src="img/vj.jpg"  width="px" class="img-responsive card-img">
+            <h4 class="card-title">               
+                <span class="sp1">Omo</span>
+                <span class="sp2">vJ</span>
+                <span class="sp3">boY</span><small>@Omo doo</small></h4>
+            <p class="card-text"> just too busy.Did you said squilty?</p>
+               <ul class="list-inline list-unstyled">
+                   <li id="card-tweets">
+                       <a href="#">
+                           <span class="profile-stats">Songs</span>
+                           <sapn class="profile-value">99k</sapn>
+                       </a>
+                   </li>
+                   <li class="card-following">
+                       <a href="#">
+                           <span class="profile-stats">Videos</span>
+                           <span class="profile-value">7</span>
+                       </a>
+                   </li>
+                   <li class="card-followers">
+                       <a href="#">
+                           <span class="profile-stats">Likes</span>
+                           <span class="profile-value">132k</span>
+                       </a>
+                   </li>
+               </ul>
+            <a href="#" class="btn btn-default" id="btn">
+                <i><svg style="height: 33px; width: 33px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#2F92CA;" d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z"/></svg></i>
+            </a>
+        </div>        
+    </div>
+    <!-- SECTION  1 -->
+    <section id="lastest" class="card">
+        <h4 id="Songs-heading"><span class="lastest-green">Lastest</span> S<span class="lastest-green">o</span>n<span class="lastest-green">g</span><span id="lastest-red">s</span></h4>
+        <div class="" id="lastest-card">
+            <div class="box">
+                <h2 class="lastes-con-head">What's hot this<br>weekend? </h2>
+                <p class="lastest-content">Update never to be cut short<br>New release, <span id="new">GIMME LOV </span><br><br></p>
+                <h4 id="lastest-listner">
+                    <button class="btn"><span id="play">
+                        Listen
+                    </span>
+                        <span>
+                            <svg style=" width: 40px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                        </span>
+                    </button>
+
+                </h4>
+            </div>
+        </div>
+    </section>
+    <div class="" id="songs-group">
+        <h4 id="play-header">Noteworthy Albums</h4>
+        <ul class="list-unstyled list-inline">
+            <li class="play-list" id="list1">
+                <span class="play">
+                        <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span>
+                <footer>
+                    <h4 class="song-title">Omo Vj Boy Ft_Mr Flex X_Seanzi</h4>
+                </footer>
+            </li>
+            <li class="play-list" id="list2">
+                <span class="play">
+                        <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span>
+                <footer>
+                    <h4 class="song-title">Omo Vj Boy Ft_Mr Flex X_Seanzi</h4>
+                </footer>
+            </li>
+            <li class="play-list" id="list3">
+                <span class="play">
+                    <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span>
+                <footer>
+                   <h4 class="song-title"> Omo Vj Boy oh Baby best of times</h4>
+                </footer>
+            </li>
+            <li class="play-list" id="list4">
+                <span class="play">
+                        <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span>
+                <footer>
+                   
+                    <h4 class="song-title"> Opo  Ft_Vj Boy_Gat The Money ........</h4>
+                </footer>
+            </li>
+            <li class="hidden-xs hidden-sm play-list" id="list5">
+                <span class="play">
+                <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span>
+                <footer>
+                   <h4 class="song-title"> Opo Ft_Vj  Boy_Mama Remix</h4>
+                
+                </footer>
+            </li>
+            <li class="hidden-xs play-list" id="list6">
+                <span class="play">
+                        <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                </span> 
+                <footer>
+                    <h4 class="song-title">Omo Vj Boy GIMME lov ........</h4>
+                </footer>
+            </li>
+            <li class="hidden-xs  play-list" id="list6">
+                    <span class="play">
+                            <svg style=" width: 40px; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill: #ffffff;" d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg> 
+                    </span>
+                    <footer>
+                        <h4 class="song-title">Omo Vj Boy GIMME lov Remix</h> 
+                    </footer>
+                    
+            </li>
+        </ul>
+
+    </div>
+    <div class="search-songs" id="search-songs">
+        <input type="text" placeholder="Search songs..." id="txtsong">
+    </div>
+      <ul class="list-unstyled list-inline">
+          <li class="img-list">
+              <img src="img/images (9).jpeg" height="40px" width="40px" class="img-responsive">
+          </li>
+          <li class="play-tracks">
+                <div class="tracks-line">
+                        <div class="tracks">
+                            <div class="track" id="track1">
+                               <audio controls = "controls" class="form-control">
+                                   <img src="img/images (6).jpeg" height="" width="" class="img-responsive">
+                                    <source src = "Allemande.mp3" type = "audio/mpeg">
+                                        <source src = "Allemande.ogg" type = "audio/ogg">
+                                        <a href = "#">lov</a>
+                                </audio>
+                            </div>
+                        </div>
+                    <a href="#">Omo Vj Boy Ft_Mr Flex X_Seanz</a>
+                </div>
+          </li>
+      </ul>
+      <ul class="list-unstyled list-inline">
+        <li class="img-list">
+            <img src="img/images (6).jpeg" height="40px" width="40px" class="img-responsive">
+        </li>
+        <li class="play-tracks">
+              <div class="tracks-line">
+                      <div class="tracks">
+                          <div class="track" id="track1">
+                             <audio controls = "controls" class="form-control">
+                                 <img src="img/images (6).jpeg" height="" width="" class="img-responsive">
+                                  <source src = "Allemande.mp3" type = "audio/mpeg">
+                                      <source src = "Allemande.ogg" type = "audio/ogg">
+                                      <a href = "#">lov</a>
+                              </audio>
+                          </div>
+                      </div>
+                      <a href="#">Opo Ft_Vj Boy_Gat The Money </a>
+              </div>
+        </li>
+    </ul>
+    <ul class="list-unstyled list-inline">
+        <li class="img-list">
+            <img src="img/images (7).jpeg" height="40px" width="40px" class="img-responsive">
+        </li>
+        <li class="play-tracks">
+              <div class="tracks-line">
+                      <div class="tracks">
+                          <div class="track" id="track1">
+                             <audio controls = "controls" class="form-control">
+                                 <img src="img/images (8).jpeg" height="" width="" class="img-responsive">
+                                  <source src = "audio/09. Victory Belongs to Jesus.mp3" type = "audio/mp3">
+                                      
+                                      <a href = "#">lov</a>
+                              </audio>
+                          </div>
+                      </div>
+                      <a href="#">Omo Vj Boy Ft_Mr Flex X_Seanzi</a>
+              </div>
+        </li>
+    </ul>
+    <ul class="list-unstyled list-inline">
+        <li class="img-list">
+            <img src="img/images (8).jpeg" height="40px" width="40px" class="img-responsive">
+        </li>
+        <li class="play-tracks">
+              <div class="tracks-line">
+                      <div class="tracks">
+                          <div class="track" id="track1">
+                             <audio controls = "controls" class="form-control">
+                                 <img src="img/images (7).jpeg" height="" width="" class="img-responsive" id="play-img">
+                                  <source src = "audio/ED_SHEERAN_-_SHAPE_OF_YOU_gistmp3.com.ng.mp3" type = "audio/mp3">
+                                      <source src = "Allemande.ogg" type = "audio/ogg">
+                                      <a href = "#">lov</a>
+                              </audio>
+                          </div>
+                      </div>
+                      <a href="#">Omo Vj Boy oh Baby best of times</a>
+              </div>
+        </li>
+    </ul>
+    <ul class="list-unstyled list-inline">
+        <li class="img-list">
+            <img src="img/VJ2.jpg" height="40px" width="40px" class="img-responsive">
+        </li>
+        <li class="play-tracks">
+              <div class="tracks-line">
+                      <div class="tracks">
+                          <div class="track" id="track1">
+                             <audio controls = "controls" class="form-control">
+                                 <img src="img/images (7).jpeg" height="" width="" class="img-responsive" id="play-img">
+                                  <source src = "audio/ED_SHEERAN_-_SHAPE_OF_YOU_gistmp3.com.ng.mp3" type = "audio/mp3">
+                                      <source src = "Allemande.ogg" type = "audio/ogg">
+                                      <a href = "#">lov</a>
+                              </audio>
+                          </div>
+                      </div>
+                      <a href="#">Omo Vj Boy GIMME lov</a>
+              </div>
+        </li>
+    </ul>            
+    </div>
+
+    <script src="js3/js/bootstrap.min.js"></script>
+    <script src="js3/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js3/main.js"></script>
+</body>
+</html>
