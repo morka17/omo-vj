@@ -1,6 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
 
+var port = process.env.PORT || 3000 ;
+
 var app = express();
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
@@ -14,6 +16,6 @@ app.get('/',(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
-    console.log('server is up om port 3000');
+app.listen (port, ()=>{
+    console.log(`server is up om port ${port}`);
 });
